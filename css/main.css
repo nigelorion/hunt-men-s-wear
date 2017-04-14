@@ -12,13 +12,14 @@ body {
   color: red; }
 
 .logo {
-  width: 80px;
+  width: 60px;
   position: fixed;
   left: 5px;
   top: 5px;
   transform: rotate(180deg);
   width: 50px;
-  transition: opacity 200ms; }
+  transition: opacity 200ms;
+  display: none; }
 
 .logo:hover {
   opacity: 0.3; }
@@ -26,7 +27,7 @@ body {
 .nav {
   position: fixed;
   height: 60px;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(87, 87, 87, 0.82);
   display: flex;
   justify-content: flex-end;
@@ -190,6 +191,9 @@ p {
   width: 400px;
   margin-top: 5%;
   filter: invert(100%); }
+  @media (max-width: 700px) {
+    .logoHero {
+      width: 300px; } }
 
 .titleContainer {
   background-color: rgba(45, 45, 45, 0.8);

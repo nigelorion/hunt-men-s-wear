@@ -29,6 +29,15 @@ $('.hamburger').click(function() {
 
 });
 
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 500) {
+        $('.logo').fadeIn(600);
+    }
+    else {
+        $('.logo').fadeOut(600);
+    }
+});
+
 // $('#nav-toggle').click(function(){
 //   $(this).toggleClass("on");
 //   $('#nav').toggleClass('mobileNav');
