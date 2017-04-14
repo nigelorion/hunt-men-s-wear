@@ -33,9 +33,6 @@ body {
   align-items: center;
   z-index: 99;
   transition: all 200ms; }
-  @media (max-width: 700px) {
-    .nav .links {
-      opacity: 0; } }
 
 .mobileNav {
   height: 100vh;
@@ -48,6 +45,9 @@ body {
   margin: 2%;
   font-size: 1.4em;
   transition: all 150ms; }
+  @media (max-width: 700px) {
+    .links {
+      opacity: 0; } }
 
 .links:hover {
   text-decoration: none;
@@ -203,7 +203,23 @@ p {
 
 .hamburger {
   color: white;
-  font-size: 2em;
-  text-decoration: none; }
+  font-size: 3em;
+  text-decoration: none;
+  opacity: 0;
+  transition: all 200ms; }
+  .hamburger:hover {
+    transform: scale(1.2);
+    color: lightgray; }
+  @media (max-width: 700px) {
+    .hamburger {
+      opacity: 1; } }
+
+.show {
+  opacity: 1;
+  font-size: 2em; }
+
+.off {
+  display: none;
+  font-size: 5em; }
 
 /*# sourceMappingURL=main.css.map */

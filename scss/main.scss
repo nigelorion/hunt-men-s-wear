@@ -41,12 +41,7 @@ body {
   align-items: center;
   z-index: 99;
   transition: all 200ms;
-  @media (max-width: 700px) {
-    .links {
-      opacity: 0;
-    }
 
-  }
   // &:hover {
   //   height: 100vh;
   //   flex-direction: column;
@@ -68,6 +63,10 @@ body {
   margin: 2%;
   font-size: 1.4em;
   transition: all 150ms;
+  @media (max-width: 700px) {
+    opacity: 0;
+
+  }
 }
 
 .links:hover {
@@ -256,10 +255,27 @@ p {
 
 .hamburger {
   color: white;
-  font-size: 2em;
+  font-size: 3em;
   text-decoration: none;
+  opacity: 0;
+  transition: all 200ms;
+  &:hover {
+    transform: scale(1.2);
+    color: lightgray;
+  }
+  @media (max-width: 700px) {
+    opacity: 1;
+
+  }
+
 }
 
-// .on {
-//   display: none;
-// }
+.show {
+	opacity: 1;
+  font-size: 2em;
+}
+
+.off {
+	display: none;
+  font-size: 5em;
+}
