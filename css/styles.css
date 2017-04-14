@@ -22,13 +22,20 @@ body {
   width: 80px;
   position: fixed;
   left: 5px;
+  top: 5px;
+  transform: rotate(180deg);
+  width: 50px;
+  transition: opacity 200ms;
 }
 
+.logo:hover {
+  opacity: 0.3;
+}
 .nav {
   position: fixed;
   height: 60px;
   width: 100%;
-  background-color: rgba(87, 87, 87, 0.72);
+  background-color: rgba(87, 87, 87, 0.82);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -220,4 +227,8 @@ p {
   text-align: center;
   padding: 1%;
   margin-bottom: 3%;
+}
+
+.storyContent {
+  height: 800px;
 }
