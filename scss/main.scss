@@ -40,6 +40,26 @@ body {
   justify-content: flex-end;
   align-items: center;
   z-index: 99;
+  transition: all 200ms;
+  @media (max-width: 700px) {
+    .links {
+      opacity: 0;
+    }
+
+  }
+  // &:hover {
+  //   height: 100vh;
+  //   flex-direction: column;
+  //   justify-content: space-around;
+  // }
+}
+
+.mobileNav {
+
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
 .links {
@@ -230,5 +250,16 @@ p {
 }
 
 .storyContent {
-  height: 9S00px;
+  height: 900px;
+
 }
+
+.hamburger {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+// .on {
+//   display: none;
+// }
